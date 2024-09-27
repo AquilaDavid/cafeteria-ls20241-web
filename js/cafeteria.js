@@ -56,9 +56,30 @@ const createCardItem = (item) => {
     </div>`;
 };
 
+// função para adicionar lonha na tabala
+const creatItensTable = () => {
+  let produtos = JSON.parse(localStorage.getItem('produtos'));
+  for (let produto of produtos) {
+    let linha = creatRowTable(produto);
+    let tbody = document.getElementById('itensTBody');
+    tbody.insertAdjacentHTML('beforeend', linha);
+  }
+}
+
+const  creatRowTable = (item) => {
+  const tr = `<tr>
+    <td>${item.titulo}</td>
+    <td>${item.descricao}</td>
+    <td>${item.alt}</td>
+    <td><img src='${item.imagemUrl}' class="card-img-top" </td>
+  </tr>`
+  return tr;
+}
+ 
 // while
 // for(;;)
 // itens.map(()=>{});
 // itens.forEach(()=>{});
 
+creatItensTable();
 createCards();
