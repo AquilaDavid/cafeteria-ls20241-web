@@ -2,57 +2,57 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização responsiva -->
+  <title>Document</title> <!-- Título da página -->
+  
   <!-- Bootstrap -->
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./css/footer.css">
+  
+  <link rel="stylesheet" href="./css/footer.css"> <!-- Folha de estilo para o rodapé -->
 
   <!-- Font Awesome -->
-  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> <!-- Estilos para ícones -->
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> <!-- Fonte Roboto -->
   <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" /> <!-- MDBootstrap -->
 </head>
 
 <body>
   <header>
-    <!-- Animated navbar-->
+    <!-- Navbar animada -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" data-mdb-navbar-init>
       <div class="container-fluid">
         <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="d-flex justify-content-start align-items-center">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- Ícone de menu -->
           </span>
         </button>
-        <a class="navbar-brand text-light" href="#">Salento.</a>
+        <a class="navbar-brand text-light" href="#">Salento.</a> <!-- Nome da marca -->
 
         <div class="collapse navbar-collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link text-light" aria-current="page" href="#intro">Home</a>
+              <a class="nav-link text-light" aria-current="page" href="#intro">Home</a> <!-- Link para a seção Home -->
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="cardapio.html">Cardápio</a>
+              <a class="nav-link text-light" href="cardapio.html">Cardápio</a> <!-- Link para a página do cardápio -->
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Animated navbar -->
+    <!-- Navbar animada -->
 
-    <!-- Background image -->
+    <!-- Imagem de fundo -->
     <div id="intro" class="bg-image" style="
               background-image: url(https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-              height: 100vh;
-              ">
-      <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8)">
+              height: 100vh;">
+      <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.8)"> <!-- Máscara escura sobre a imagem -->
         <div class="container d-flex align-items-center text-center h-100">
           <div>
-            <h1 class="mb-5">Salento. Café</h1>
+            <h1 class="mb-5">Salento. Café</h1> <!-- Título principal -->
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis molestiae laboriosam numquam expedita ullam saepe ipsam, deserunt provident corporis, sit non accusamus maxime, magni nulla quasi iste ipsa architecto? Autem!
             </p>
@@ -60,61 +60,37 @@
         </div>
       </div>
     </div>
-    <!-- Background image -->
+    <!-- Imagem de fundo -->
   </header>
+
   <main class="p-4">
-    <!-- <div class="container">
-      <p id="hora"></p>
-      <p id="data"></p>
-      <button type="button" id="iniciar" name="iniciar" class="btn btn-primary">Iniciar</button>
-      <button type="button" id="parar" name="parar" class="btn btn-danger">Parar</button>
-      <p id="mensagem"></p>
-    </div> -->
-
     <div class="container">
-      <div id="cards" class="row">
-
+      <div id="cards" class="row"> <!-- Seção para os cards -->
       </div>
     </div>
   </main>
-  <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
+
+  <footer class="text-center bg-body-tertiary"> <!-- Rodapé da página -->
     <div class="container pt-4">
-      <!-- Section: Social media -->
+      <!-- Seção de mídias sociais -->
       <section class="mb-4">
-        <!-- Facebook -->
+        <!-- Links para as mídias sociais -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
         <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
       </section>
-      <!-- Section: Social media -->
     </div>
-    <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);"> <!-- Seção de direitos autorais -->
       © 2020 Copyright:
-      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a> <!-- Link de copyright -->
     </div>
-    <!-- Copyright -->
   </footer>
 
-  <!-- <script src="./js/index.js"></script> -->
-  <!-- <script src="./js/datahora.js"></script> -->
-
-  <script src="./js/cafeteria.js"></script>
+  <script src="./js/cafeteria.js"></script> <!-- Script para funcionalidade personalizada -->
   
   <!-- Bootstrap -->
   <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -122,7 +98,7 @@
 
   <!-- MDB -->
   <script type="text/javascript" src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
-  <script type="text/javascript" src="./node_modules/mdbootstrap/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./node_modules/mdbootstrap/js/jquery.min.js"></script> <!-- jQuery para compatibilidade -->
 </body>
 
 </html>
