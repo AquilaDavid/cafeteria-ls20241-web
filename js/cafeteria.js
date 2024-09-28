@@ -73,7 +73,7 @@ const  creatRowTable = (item) => {
     <td>${item.titulo}</td>
     <td>${item.descricao}</td>
     <td>${item.alt}</td>
-    <td><img src='${item.imagemUrl}' class="card-img-top" </td>
+    <td><img src='${item.imagemUrl}' style: width: 1vw; class="card-img-top" </td>
   </tr>`
   return tr;
 }

@@ -74,7 +74,26 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              ...
+              <form >
+                <div class="mb-3">
+                  <label for="titulo" class="form-label">Titulo</label>
+                  <input type="text" class="form-control" id="titulo" name="titulo">  
+                </div>
+                <div class="mb-3">
+                  <label for="descricao" class="form-label">Descrição</label>
+                  <input type="text" class="form-control" id="descricao" name="descricao">  
+                </div>
+                <div class="mb-3">
+                  <label for="alt" class="form-label">Legenda</label>
+                  <input type="text" class="form-control" id="alt" name="alt">  
+                </div>
+                <div class="mb-3">
+                  <label for="imagemUrl" class="form-label">imagemUrl</label>
+                  <input type="text" class="form-control" id="imagemUrl" name="imagemUrl">  
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
