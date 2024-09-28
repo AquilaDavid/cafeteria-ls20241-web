@@ -30,7 +30,7 @@ let itens = [
   },
 ];
 
-if (localStorage.getItem('produtos') == undefined) {
+if (!localStorage.getItem('produtos')) {
   localStorage.setItem('produtos', JSON.stringify(itens));
 }
 
@@ -39,7 +39,9 @@ const createCards = () => {
   for (let produto of produtos) {
     let card = createCardItem(produto);
     let cardsDiv = document.getElementById('cards');
-    cardsDiv.insertAdjacentHTML('beforeend', card);
+    if(cardsDiv){
+      cardsDiv.insertAdjacentHTML('beforeend', card);
+    }
   }
 };
 
@@ -81,5 +83,9 @@ const  creatRowTable = (item) => {
 // itens.map(()=>{});
 // itens.forEach(()=>{});
 
-creatItensTable();
+
 createCards();
+
+if(document.getElementById('itensTBody')){
+  creatItensTable();
+}
