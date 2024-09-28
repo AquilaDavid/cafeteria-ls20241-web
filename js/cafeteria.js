@@ -60,26 +60,28 @@ const createCardItem = (item) => {
 // Função para adicionar linhas na tabela de produtos
 const creatItensTable = () => {
   let produtos = JSON.parse(localStorage.getItem('produtos')); // Recupera os produtos do localStorage
-  for (let produto of produtos) { // Itera sobre cada produto
-    let linha = creatRowTable(produto); // Cria uma linha para o produto
+  for (let i = 0; i < produtos.length; i++) { // Itera sobre cada produto com índice
+    let linha = creatRowTable(produtos[i], i + 1); // Cria uma linha para o produto com índice
     let tbody = document.getElementById('itensTBody'); // Seleciona o corpo da tabela
     tbody.insertAdjacentHTML('beforeend', linha); // Adiciona a linha ao DOM
   }
 }
 
 // Função para gerar o HTML de uma linha da tabela
-const creatRowTable = (item) => {
+const creatRowTable = (item, index) => {
   const tr = `<tr>
+    <td>${index}</td> <!-- Adiciona a contagem dinâmica -->
     <td>${item.titulo}</td>
     <td>${item.descricao}</td>
     <td>${item.alt}</td>
-    <td><img src='${item.imagemUrl}' class="card-img-top" alt="${item.alt}"></td>
+    <td><img src='${item.imagemUrl}' class="card-img-top" alt="${item.alt} width='100'"></td>
   </tr>`;
   return tr; // Retorna a linha gerada
 }
 
 // Chama a função para criar os cards ao carregar a página
 createCards()
+
 
 // Função para adicionar novos itens ao localStorage
 const addItens = (event) => {
